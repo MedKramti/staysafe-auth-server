@@ -1,0 +1,13 @@
+quarkus.datasource.db-kind=postgresql
+quarkus.datasource.jdbc.url=jdbc:postgresql://localhost:5432/staysafe_users
+quarkus.datasource.username=
+quarkus.datasource.password=
+quarkus.http.port = 8081
+# JWT
+mp.jwt.verify.publickey.location=
+mp.jwt.verify.issuer=https://kramti.com/
+
+quarkus.native.resources.includes=
+
+## Sign key
+smallrye.jwt.sign.key.location=

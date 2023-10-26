@@ -10,10 +10,10 @@ import lombok.*;
 @NoArgsConstructor
 @Data
 public class AuthRequest {
-    @Pattern(regexp = "[a-zA-Z]{3,32}", message = AppConfig.INVALID_LOGIN)
-    @NotNull(message = AppConfig.INVALID_LOGIN)
+    @Pattern(regexp = "[a-zA-Z]{3,32}", message = AppConfig.INVALID_LOGIN_MESSAGE)
+    @NotNull(message = AppConfig.INVALID_LOGIN_MESSAGE)
     private String username;
-    @Size(max = 128, message = AppConfig.INVALID_LOGIN)
-    @NotNull(message = AppConfig.INVALID_LOGIN)
+    @Size(max = 128, message = AppConfig.INVALID_LOGIN_MESSAGE)
+    @NotNull(message = AppConfig.INVALID_LOGIN_MESSAGE)
     private String password;
 }

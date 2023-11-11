@@ -1,3 +1,5 @@
+# Example of application.properties file
+# Make the change and rename the file (to application.properties)
 quarkus.datasource.db-kind=postgresql
 quarkus.datasource.jdbc.url=jdbc:postgresql://localhost:5432/staysafe_users
 quarkus.datasource.username=
@@ -11,3 +13,7 @@ quarkus.native.resources.includes=
 
 ## Sign key
 smallrye.jwt.sign.key.location=
+
+## Cors
+quarkus.http.cors=true
+quarkus.http.cors.origins=http://localhost:4200
